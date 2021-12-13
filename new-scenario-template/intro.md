@@ -1,4 +1,4 @@
-# New Scenario Template (Your Title Here)
+# Test your K8S Knowledge (Your Title Here)
 
 This is a mostly empty template. To create your own first scenario, duplicate this in your own repo, then modify it as needed.
 
@@ -16,9 +16,7 @@ Importantly, why does this matter? What can this technology, tool, or approach h
 
 ## Prerequisite Skills
 
-Define the target audience here, and list any prerequisite skills. For example:
-
-This is for software developers with prior experience using Jenkins to deploy web applications.
+This is for software developers with prior experience using Kubernetes to asses their knowledge level.
 
 ## Table of Contents
 
