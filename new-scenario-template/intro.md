@@ -1,5 +1,10 @@
 # Test your K8S Knowledge (Your Title Here)
 
+
+In this scenario you will have a chance to assess your Kubernetes troubleshooting expertise. To do this we will use K3s which is a new lightweight Kubernetes distribution prototype from Rancher designed to be easy to install, half the memory, all in a binary less than 40mb.
+
+
+
 This is a mostly empty template. To create your own first scenario, duplicate this in your own repo, then modify it as needed.
 
 ## Description
