@@ -22,6 +22,11 @@
       "text": "intro.md",
       "code": "foreground.sh"
     },
+    "assets": {
+      "host01": [
+          {"file": "service.yaml", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
+    },
     "finish": {
       "text": "finish.md"
     }
