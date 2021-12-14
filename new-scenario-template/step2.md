@@ -20,4 +20,4 @@ You can now use
 
 Deploy a simple app using:
 
-`k apply -f ./service.yaml`{{execute T2}}
+`k apply -f /usr/local/bin/service.yaml`{{execute T2}}
