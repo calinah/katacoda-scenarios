@@ -34,6 +34,6 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: influxdb
+    app: Influxdb
   sessionAffinity: None
   type: NodePort
