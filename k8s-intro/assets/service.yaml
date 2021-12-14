@@ -1,13 +1,8 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: influxdb
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: influxdb
-  namespace: influxdb
+  namespace: defauly
 spec:
   replicas: 1
   selector:
@@ -21,9 +16,6 @@ spec:
       containers:
         - name: influxdb
           image: influxdb:1.7.9
-        - name: chronograf
-          image: chronograf:1.6.2
-          args: ["--influxdb-url=http://localhost:8086"]
 ---
 apiVersion: v1
 kind: Service
@@ -33,11 +25,13 @@ metadata:
   name: influxdb
   namespace: influxdb
 spec:
+  externalTrafficPolicy: Cluster
   ports:
-    - name: server
-      port: 8086
-    - name: chronograf
-      port: 8888
+  - nodePort: 8086
+    port: 80
+    protocol: TCP
+    targetPort: 80
   selector:
     app: influxdb
-
+  sessionAffinity: None
+  type: NodePort
