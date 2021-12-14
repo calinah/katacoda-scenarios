@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: influxdb
-  namespace: defauly
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -23,14 +23,14 @@ metadata:
   labels:
     app: influxdb
   name: influxdb
-  namespace: influxdb
+  namespace: default
 spec:
   externalTrafficPolicy: Cluster
   ports:
-  - nodePort: 8086
-    port: 80
+  - nodePort: 30086
+    port: 8086
     protocol: TCP
-    targetPort: 80
+    targetPort: 8086
   selector:
     app: influxdb
   sessionAffinity: None
